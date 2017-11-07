@@ -1,0 +1,24 @@
+﻿@model FoodFeels.ViewModels.ResultViewModel
+@{
+    ViewBag.Title = "Analyse Results";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-4 col-md-offset-4 gb-form-wrap">
+            <h2>Analyse Results</h2>
+            <h3>Result Message</h3>
+            <p>@Model.Result</p>
+
+            <h3>List of Foods</h3>
+            <ul>
+                @foreach (string foodName in Model.FoodsList)
+                {
+                    <li>@foodName</li>
+                }
+            </ul>
+        </div>
+    </div>
+</div>
+
+            

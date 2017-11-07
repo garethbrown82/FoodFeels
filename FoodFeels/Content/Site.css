@@ -1,0 +1,118 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+/* Commented out as unecessary */
+/*input,
+select,
+textarea {
+    max-width: 280px;
+}*/
+
+/* CSS added by Gareth*/
+
+h2 {
+    margin-top: 50px;
+}
+
+.gb-form-wrap {
+    /*border: solid 1px black;*/
+    padding-top: 50px;
+}
+
+.flex-space-around {
+    display: flex;
+    justify-content: space-around;
+}
+
+.gb-submit-button {
+    margin-top: 15px;
+    width: 100%
+}
+
+input[type="radio"] {
+    visibility: hidden;
+}
+
+.gb-radio-container label {
+    position: relative;
+}
+
+.gb-buttons-container {
+    padding-top: 20px;
+    margin: 10px 0 50px 0;
+}
+
+.gb-radio-container span::before,
+.gb-radio-container span::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.gb-radio-container span.gb-radio-span:hover {
+    cursor: pointer;
+}
+
+.gb-radio-span1::before {
+    position: absolute;
+    
+    left: -35px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background-color: #00d700;
+    border: solid 5px #009200;
+    border-radius: 50px;
+}
+
+.gb-radio-span2::before {
+    position: absolute;
+    top: 40px;
+    left: -35px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background-color: #ff6a00;
+    border: solid 5px #b64c00;
+    border-radius: 50px;
+}
+
+.gb-radio-span3::before {
+    position: absolute;
+    top: 40px;
+    left: -35px;
+    box-sizing: border-box;
+    width: 50px;
+    height: 50px;
+    background-color: #ff0000;
+    border: solid 5px #c10000;
+    border-radius: 50px;
+}
+
+input[type="radio"]:checked + label .gb-radio::after {
+    left: -23px;
+    box-sizing: border-box;
+    width: 26px;
+    height: 26px;
+    background-color: rgba(0, 0, 0, 0.20);
+    border-radius: 50px;
+}
